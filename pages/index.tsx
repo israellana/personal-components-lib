@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <main style={{width: '100vw', height: '100vh'}}>
+      <main className="body-font font-wild text-gray-900" style={{width: '100vw', height: '100vh'}}>
         <Image alt="test" width="100%" layout="fill" src={ImagePng} />
       </main>
     </div>
