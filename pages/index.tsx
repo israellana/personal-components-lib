@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link';
+import Image from 'next/image'
+import ImagePng from '../public/frame.png'
 
 export default function Home() {
   return (
@@ -9,10 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <main>
-        <h1 className="body-font font-wild text-gray-900">
-          Welcome to <Link href="/login">Login!</Link>
-        </h1>
+      <main style={{width: '100vw', height: '100vh'}}>
+        <Image width="100%" layout="fill" src={ImagePng} />
       </main>
     </div>
   )
