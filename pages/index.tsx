@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main style={{width: '100vw', height: '100vh'}}>
-        <Image width="100%" layout="fill" src={ImagePng} />
+        <Image alt="test" width="100%" layout="fill" src={ImagePng} />
       </main>
     </div>
   )
