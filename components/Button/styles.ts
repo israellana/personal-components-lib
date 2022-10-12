@@ -1,44 +1,30 @@
+const sizeTypes: { [key: string]: any } = {
+    'huge': 'py-5 px-8 rounded-2xl focus:rounded-3xl',
+    'large': 'py-5 px-8 rounded-xl focus:rounded-[20px]',
+    'medium': 'py-4 px-6 rounded-xl focus:rounded-[20px]',
+    'small': 'py-3 px-5 rounded-lg focus:rounded-2xl'
+}
+
 const styles = {
-    default: [
+    default: (size: string = 'medium') => [
+        sizeTypes[size],
         'flex',
-        'bg-red',
-        'py-5',
-        'px-8',
-        "active:bg-primary-500", 
         "gap-1",
         "m-2",
-        "focus:m-0",
         "transition", 
         "duration-300", 
         "ease-in-out", 
         "bg-primary-300", 
-        "rounded-2xl", 
         "text-gray-50", 
         "hover:bg-primary-400", 
+        "focus:m-0",
         "focus:bg-primary-300", 
         "focus:border-solid", 
         "focus:border-8", 
         "focus:border-primary-100", 
-        "focus:rounded-3xl", 
         "disabled:bg-gray-200", 
-        "disabled:text-gray-500"
-    ].join(' '),
-    li: [
-        'mb-3',
-        'sm:ml-3',
-        'sm:mb-0',
-        'even:bg-gray-50',
-        'odd:bg-white',
-    ].join(' '),
-    a: () =>
-    [
-        'text-black',
-        'font-bold',
-        'inline-block',
-        'rounded-full',
-        'bg-yellow-400',
-        'py-1',
-        'px-3',
+        "disabled:text-gray-500",
+        "active:bg-primary-500"
     ].join(' '),
 }
 

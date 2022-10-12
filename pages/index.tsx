@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Button from '../components/Button'
+import Typography from '../components/Typography'
 
 export default function Home() {
   return (
@@ -10,7 +10,6 @@ export default function Home() {
       </Head>
 
       <main className="flex items-center justify-center h-screen w-screen">
-        <Button />
       </main>
     </div>
   )
