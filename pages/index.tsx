@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import ImagePng from '../public/frame.png'
+import Button from '../components/Button'
 
 export default function Home() {
   return (
@@ -10,8 +9,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <main className="body-font font-wild text-gray-900" style={{width: '100vw', height: '100vh'}}>
-        <Image alt="test" width="100%" layout="fill" src={ImagePng} />
+      <main className="flex items-center justify-center h-screen w-screen">
+        <Button />
       </main>
     </div>
   )
