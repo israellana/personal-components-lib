@@ -7,7 +7,10 @@ export default {
   title: 'Example/Button',
   component: Button,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    size: {
+        options: ['huge', 'large', 'medium', 'small'],
+        control: { type: 'inline-radio' }
+    }
   },
 } as ComponentMeta<typeof Button>;
 
