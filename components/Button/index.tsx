@@ -14,11 +14,11 @@ const textTypes: { [key: string]: any } = {
     'small': 'x-small'
 }
 
-const Button: React.FC<ButtonProps> = ({size = 'medium', children}) => {
+const Button: React.FC<ButtonProps> = (props) => {
   return (
-    <button className={classes.default(size)}>
-        <Typography size={textTypes[size]}>
-            {children}
+    <button {...props} className={classes.default(props.size)}>
+        <Typography size={textTypes[props.size??'medium']}>
+            {props.children}
         </Typography>
     </button>
   )
