@@ -2,51 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "SubjectivityMedium";
-  src: url("../public/fonts/SubjectivitySerif-Medium.otf");
-}
-
-@font-face {
-  font-family: "SubjectivityLight";
-  src: url("../public/fonts/SubjectivitySerif-Light.otf");
-}
-
-@font-face {
-  font-family: "SubjectivityRegular";
-  src: url("../public/fonts/SubjectivitySerif-Regular.otf");
-}
-
-@font-face {
-  font-family: "SubjectivitySuper";
-  src: url("../public/fonts/SubjectivitySerif-Super.otf");
-}
-
-@font-face {
-  font-family: "SubjectivityThin";
-  src: url("../public/fonts/SubjectivitySerif-Thin.otf");
-}
-
-@font-face {
-  font-family: "SubjectivityLight";
-  src: url("../public/fonts/SubjectivitySerif-Light.otf");
-}
-
-@font-face {
-  font-family: "SubjectivityExtraBold";
-  src: url("../public/fonts/SubjectivitySerif-ExtraBold.otf");
-}
-
-@font-face {
-  font-family: "SubjectivityBold";
-  src: url("../public/fonts/SubjectivitySerif-Bold.otf");
-}
-
-@font-face {
-  font-family: "SubjectivityBlack";
-  src: url("../public/fonts/SubjectivitySerif-Black.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 
 * {
-  font-family: SubjectivityMedium, SubjectivityRegular, cursive
+  font-family: 'Maven Pro', sans-serif;
 }

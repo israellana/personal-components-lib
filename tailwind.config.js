@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      wild: ["SubjectivityMedium", "cursive"],
+      wild: ["Maven Pro", "cursive"],
     },
     colors: colors,
   },
