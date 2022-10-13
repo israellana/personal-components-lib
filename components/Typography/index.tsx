@@ -10,9 +10,7 @@ interface TypographyProps{
 
 const Typography: React.FC<TypographyProps> = (props) => {
   return (
-    <div className={classes.default(props.size, props.type, props.weight)}>
-        {props.children}
-    </div>
+    <div {...props} className={classes.default(props.size, props.type, props.weight)} />
   )
 }
 

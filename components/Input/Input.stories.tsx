@@ -1,20 +1,20 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Button from './index';
+import Input from './index';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Input',
+  component: Input,
   argTypes: {
     size: {
         options: ['huge', 'large', 'medium', 'small'],
         control: { type: 'inline-radio' }
     }
   },
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Input>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
