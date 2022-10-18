@@ -15,6 +15,12 @@ const typographyTypes: { [key: string]: any } = {
     }
 }
 
+const typographyAligns: { [key: string]: any } = {
+    'left': 'text-left',
+    'center': 'text-center',
+    'right': 'text-right'
+}
+
 const typographyWeights: { [key: string]: any } = {
     'bold': 'font-bold',
     'normal': 'font-medium',
@@ -22,9 +28,11 @@ const typographyWeights: { [key: string]: any } = {
 }
 
 const styles = {
-    default: (size:string = 'medium', type:string = 'text', weight:string = 'normal') => [
-        typographyTypes[type][size],
-        typographyWeights[weight]
+    default: (props:any) => [
+        typographyTypes[props.type??"text"][props.size??"medium"],
+        typographyWeights[props.weight??"normal"],
+        typographyAligns[props.align??"left"],
+        props.align === "center" && "w-full"
     ].join(' ')
 }
 

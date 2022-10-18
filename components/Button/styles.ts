@@ -6,8 +6,9 @@ const sizeTypes: { [key: string]: any } = {
 }
 
 const styles = {
-    default: (size: string = 'medium') => [
-        sizeTypes[size],
+    default: (props:any) => [
+        sizeTypes[props.size],
+        props.full && 'w-full',
         'flex',
         "gap-1",
         "m-2",

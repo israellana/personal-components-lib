@@ -5,6 +5,7 @@ import classes from './styles'
 interface ButtonProps{
     size?: string;
     children: string;
+    full?: boolean
 }
 
 const textTypes: { [key: string]: any } = {
@@ -16,8 +17,8 @@ const textTypes: { [key: string]: any } = {
 
 const Button: React.FC<ButtonProps> = (props) => {
   return (
-    <button {...props} className={classes.default(props.size)}>
-        <Typography size={textTypes[props.size??'medium']}>
+    <button {...props} className={classes.default(props)}>
+        <Typography align={props.full?"center":"left"} size={textTypes[props.size??'medium']}>
             {props.children}
         </Typography>
     </button>
@@ -26,7 +27,8 @@ const Button: React.FC<ButtonProps> = (props) => {
 
 Button.defaultProps = {
     size: 'medium',
-    children: ''
+    children: 'Teste',
+    full: false
 };
 
 export default Button

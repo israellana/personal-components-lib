@@ -8,8 +8,8 @@ export default {
   component: Button,
   argTypes: {
     size: {
-        options: ['huge', 'large', 'medium', 'small'],
-        control: { type: 'inline-radio' }
+      options: ['huge', 'large', 'medium', 'small'],
+      control: { type: 'inline-radio' }
     }
   },
 } as ComponentMeta<typeof Button>;
@@ -19,5 +19,6 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   size: 'medium',
-  children: 'Teste'
+  children: 'Teste',
+  full: false
 };
