@@ -5,7 +5,9 @@ import classes from './styles'
 interface ButtonProps{
     size?: string;
     children: string;
-    full?: boolean
+    full?: boolean;
+    variant?: string;
+    disabled?: boolean;
 }
 
 const textTypes: { [key: string]: any } = {
@@ -28,7 +30,9 @@ const Button: React.FC<ButtonProps> = (props) => {
 Button.defaultProps = {
     size: 'medium',
     children: 'Teste',
-    full: false
+    full: false,
+    variant: "contained",
+    disabled: false
 };
 
 export default Button

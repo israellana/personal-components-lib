@@ -10,7 +10,11 @@ export default {
     size: {
       options: ['huge', 'large', 'medium', 'small'],
       control: { type: 'inline-radio' }
-    }
+    },
+    variant: {
+      options: ['text', 'contained', 'outlined'],
+      control: { type: 'inline-radio' }
+    },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -20,5 +24,7 @@ export const Default = Template.bind({});
 Default.args = {
   size: 'medium',
   children: 'Teste',
-  full: false
+  full: false,
+  variant: "contained",
+  disabled: false
 };
