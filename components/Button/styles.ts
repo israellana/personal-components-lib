@@ -11,11 +11,10 @@ const styles = {
         props.full && 'w-full',
         'flex',
         "gap-1",
-        "m-2",
         "transition", 
         "duration-300", 
         "ease-in-out", 
-        props.variant === "contained"&&"bg-primary-300 text-gray-50 hover:bg-primary-400 focus:m-0 focus:bg-primary-300 focus:border-solid focus:border-8 focus:border-primary-100 disabled:bg-gray-200 disabled:text-gray-500 active:bg-primary-500",
+        props.variant === "contained"&&"bg-primary-300 text-gray-50 hover:bg-primary-400 focus:bg-primary-300 focus:outline focus:outline-8 focus:outline-primary-100 disabled:bg-gray-200 disabled:text-gray-500 active:bg-primary-500",
         props.variant === "outlined"&&`focus:outline focus:outline-8 focus:outline-primary-100 text-primary-300 bg-white ${!props.disabled&&'hover:bg-gray-100'} border-2 border-primary-300 disabled:border-gray-200 disabled:text-gray-400`,
     ].join(' '),
 }
