@@ -1,8 +1,8 @@
 const sizeTypes: { [key: string]: any } = {
-    'huge': 'py-5 px-8 rounded-2xl focus:rounded-3xl',
-    'large': 'py-5 px-8 rounded-xl focus:rounded-[20px]',
-    'medium': 'py-4 px-6 rounded-xl focus:rounded-[20px]',
-    'small': 'py-3 px-5 rounded-lg focus:rounded-2xl'
+    'huge': 'py-5 px-8 rounded-2xl',
+    'large': 'py-5 px-8 rounded-xl',
+    'medium': 'py-4 px-6 rounded-xl',
+    'small': 'py-3 px-5 rounded-lg'
 }
 
 const styles = {
@@ -16,7 +16,7 @@ const styles = {
         "duration-300", 
         "ease-in-out", 
         props.variant === "contained"&&"bg-primary-300 text-gray-50 hover:bg-primary-400 focus:m-0 focus:bg-primary-300 focus:border-solid focus:border-8 focus:border-primary-100 disabled:bg-gray-200 disabled:text-gray-500 active:bg-primary-500",
-        props.variant === "outlined"&&`outline outline-2 text-primary-300 bg-white ${!props.disabled&&'hover:bg-gray-100'} focus:border-8 focus:border-primary-100 focus:m-0 disabled:border-gray-200 disabled:text-gray-400`,
+        props.variant === "outlined"&&`focus:outline focus:outline-8 focus:outline-primary-100 text-primary-300 bg-white ${!props.disabled&&'hover:bg-gray-100'} border-2 border-primary-300 disabled:border-gray-200 disabled:text-gray-400`,
     ].join(' '),
 }
 
