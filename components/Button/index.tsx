@@ -18,13 +18,16 @@ const textTypes: { [key: string]: any } = {
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  return (
-    <button {...props} className={classes.default(props)}>
-        <Typography align={props.full?"center":"left"} size={textTypes[props.size??'medium']}>
-            {props.children}
-        </Typography>
-    </button>
-  )
+
+    const Element = props.variant === 'text' ? 'a' : 'button'
+
+    return (
+        <Element {...props} className={classes.default(props)}>
+            <Typography align={props.full?"center":"left"} size={textTypes[props.size??'medium']}>
+                {props.children}
+            </Typography>
+        </Element>
+    )
 }
 
 Button.defaultProps = {
