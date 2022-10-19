@@ -20,6 +20,10 @@ export default {
       options: ['light', 'normal', 'bold'],
       control: { type: 'inline-radio' }
     },
+    align: {
+      options: ['left', 'center', 'right'],
+      control: { type: 'inline-radio' }
+    },
   },
 } as ComponentMeta<typeof Typography>;
 
@@ -30,5 +34,6 @@ Default.args = {
   size: 'medium',
   type: 'title',
   weight: 'normal',
-  children: 'Test'
+  children: 'Test',
+  align: 'left'
 };
