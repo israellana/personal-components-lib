@@ -18,6 +18,10 @@ const styles = {
         "mt[6px]",
         "text-xs"
     ].join(' '),
+    container: () => [
+        "relative",
+        "pt-['13px']"
+    ].join(' '),
 }
 
 export default styles

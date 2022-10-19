@@ -10,10 +10,10 @@ interface InputProps{
 
 const Input: React.FC<InputProps> = (props) => {
   return (
-    <>
-        <label className={classes.label()}>Teste</label>
-        <input className={classes.default()} />
-    </>
+    <div className={classes.container()}>
+      <label className={classes.label()}>Teste</label>
+      <input placeholder='' className={classes.default()} />
+    </div>
   )
 }
 
