@@ -1,4 +1,5 @@
 const colors = require('./styles/colors');
+const colorsSafelist = require('./styles/colorsSafelist');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,4 +14,5 @@ module.exports = {
     colors: colors,
   },
   plugins: [],
+  safelist: colorsSafelist
 }
