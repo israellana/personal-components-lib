@@ -11,8 +11,8 @@ interface InputProps{
 const Input: React.FC<InputProps> = (props) => {
   return (
     <div className={classes.container()}>
+      <input placeholder=" " className={classes.default()} />
       <label className={classes.label()}>Teste</label>
-      <input placeholder='' className={classes.default()} />
     </div>
   )
 }
