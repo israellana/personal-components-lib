@@ -24,6 +24,9 @@ export default {
       options: ['left', 'center', 'right'],
       control: { type: 'inline-radio' }
     },
+    color: {
+      control: { type: 'text' }
+    },
   },
 } as ComponentMeta<typeof Typography>;
 
@@ -35,5 +38,6 @@ Default.args = {
   type: 'title',
   weight: 'normal',
   children: 'Test',
-  align: 'left'
+  align: 'left',
+  color: 'black'
 };

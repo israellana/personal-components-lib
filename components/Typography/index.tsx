@@ -7,6 +7,7 @@ interface TypographyProps{
   type?: string;
   children: string;
   align?: string;
+  color?: string;
 }
 
 const elementTypes: { [key: string]: any } = {
@@ -39,7 +40,8 @@ Typography.defaultProps = {
   size: 'medium',
   weight: 'normal',
   type: 'text',
-  align: 'left'
+  align: 'left',
+  color: 'black'
 };
 
 export default Typography

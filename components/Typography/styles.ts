@@ -32,7 +32,8 @@ const styles = {
         typographyTypes[props.type??"text"][props.size??"medium"],
         typographyWeights[props.weight??"normal"],
         typographyAligns[props.align??"left"],
-        props.align === "center" && "w-full"
+        "w-full",
+        `text-${props.color}`
     ].join(' ')
 }
 

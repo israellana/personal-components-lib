@@ -167,6 +167,8 @@ module.exports = [
     'text-gray-300',
     'text-gray-400',
     'text-gray-500',
+    'text-black',
+    'text-white',
     'border-primary-50',
     'border-primary-100',
     'border-primary-200',
