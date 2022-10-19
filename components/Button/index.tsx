@@ -8,6 +8,7 @@ interface ButtonProps{
     full?: boolean;
     variant?: string;
     disabled?: boolean;
+    color?: string;
 }
 
 const textTypes: { [key: string]: any } = {
@@ -35,7 +36,8 @@ Button.defaultProps = {
     children: 'Teste',
     full: false,
     variant: "contained",
-    disabled: false
+    disabled: false,
+    color: 'primary'
 };
 
 export default Button

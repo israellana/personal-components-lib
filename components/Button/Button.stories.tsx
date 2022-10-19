@@ -15,6 +15,10 @@ export default {
       options: ['text', 'contained', 'outlined'],
       control: { type: 'inline-radio' }
     },
+    color: {
+      options: ['primary', 'secondary', 'green', 'orange', 'red', 'yellow', 'gray'],
+      control: { type: 'inline-radio' }
+    },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -26,5 +30,6 @@ Default.args = {
   children: 'Teste',
   full: false,
   variant: "contained",
-  disabled: false
+  disabled: false,
+  color: 'primary'
 };
