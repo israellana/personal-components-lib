@@ -15,9 +15,10 @@ const styles = {
         "focus:ring-0 peer"
     ].join(' '),
     label: () => [
-        "ml-6",
+        "ml-4",
         "mt[6px]",
         "text-xs",
+        "text-gray-500",
         "absolute",
         "duration-300",
         "transform",
