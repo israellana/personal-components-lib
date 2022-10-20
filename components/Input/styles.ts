@@ -1,6 +1,6 @@
 const styles = {
     default: (props:any) => [
-        "py-3",
+        props.scale === 'medium' ? "py-3" : "py-2",
         "px-6",
         `bg-gray-200`,
         "rounded-2xl",
@@ -32,9 +32,9 @@ const styles = {
         "absolute",
         "duration-300",
         "transform",
-        "-translate-y-4",
+        props.scale === 'medium' ? "-translate-y-4" : "-translate-y-[12px]",
         "scale-75",
-        "top-4",
+        props.scale === 'medium' ? "top-4" : "top-[12px]",
         "z-10",
         "origin-[0]",
         "left-2.5",
@@ -47,7 +47,7 @@ const styles = {
         "peer-placeholder-shown:scale-100",
         "peer-placeholder-shown:translate-y-0",
         "peer-focus:scale-75",
-        "peer-focus:-translate-y-4"
+        props.scale === 'medium' ? "peer-focus:-translate-y-4" : "peer-focus:-translate-y-[12px]"
     ].join(' '),
     container: () => [
         "relative",
