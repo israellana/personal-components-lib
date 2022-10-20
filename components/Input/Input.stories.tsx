@@ -7,17 +7,21 @@ export default {
   title: 'Example/Input',
   component: Input,
   argTypes: {
-    size: {
-        options: ['huge', 'large', 'medium', 'small'],
-        control: { type: 'inline-radio' }
-    }
+    scale: {
+      options: ['medium', 'small'],
+      control: { type: 'inline-radio' }
+    },
+    full: { control: 'boolean' },
   },
 } as ComponentMeta<typeof Input>;
 
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Default = Template.bind({});
+
 Default.args = {
-  size: 'medium',
-  children: 'Teste'
+  scale: 'medium',
+  full: false,
+  hint: '',
+  label: ''
 };

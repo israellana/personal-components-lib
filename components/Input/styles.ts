@@ -1,20 +1,30 @@
-
 const styles = {
-    default: () => [
+    default: (props:any) => [
         "py-3",
         "px-6",
-        "bg-gray-200",
+        `bg-gray-200`,
         "rounded-2xl",
         "text-gray-500",
-        "focus:border-primary-300",
-        "focus:border-solid",
+        //"valid:bg-green-100",
+        //"valid:outline-offset-0",
+        //"valid:focus:outline-green-300",
+        "valid:focus:outline-primary-300",
+        "invalid:bg-red-100",
+        "invalid:outline-offset-0",
+        "invalid:focus-offset-0",
+        `invalid:focus:outline-red-300`,
+        "focus:outline-solid",
         "focus:outline-none",
-        "focus:border-2",
+        "focus:outline-2",
+        "focus:outline-offset-0",
         "block", 
-        "focus:outline-none", 
-        "focus:ring-0 peer"
+        "focus:border-none", 
+        "focus:ring-0 peer",
+        "disabled:opacity-50",
+        props.full && 'w-full'
+        
     ].join(' '),
-    label: () => [
+    label: (props:any) => [
         "ml-4",
         "mt[6px]",
         "text-xs",
@@ -28,7 +38,12 @@ const styles = {
         "z-10",
         "origin-[0]",
         "left-2.5",
-        "peer-focus:text-primary-300",
+        "peer-disabled:opacity-50",
+        `peer-focus:text-primary-300`,
+        //"peer-valid:text-green-300",
+        "peer-invalid:text-red-300",
+        //"peer-valid:peer-focus:text-green-300",
+        "peer-invalid:peer-focus:text-red-300",
         "peer-placeholder-shown:scale-100",
         "peer-placeholder-shown:translate-y-0",
         "peer-focus:scale-75",
@@ -36,6 +51,13 @@ const styles = {
     ].join(' '),
     container: () => [
         "relative",
+    ].join(' '),
+    hint: () => [
+        "mt-2",
+        "peer-focus:text-primary-300",
+        //"peer-valid:text-green-300",
+        "peer-invalid:text-red-300",
+        "text-gray-500"
     ].join(' '),
 }
 
