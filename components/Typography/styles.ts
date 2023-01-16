@@ -33,7 +33,7 @@ const styles = {
         typographyWeights[props.weight??"normal"],
         typographyAligns[props.align??"left"],
         "w-full",
-        `text-${props.color}`
+        `text-${props.color}-400`
     ].join(' ')
 }
 
