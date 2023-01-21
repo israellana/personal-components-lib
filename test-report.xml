@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\Users\israe\Desktop\TCC IGTI\vr-project\components\Textarea\Textarea.spec.js">
+    <testCase name="Textarea component renders a textarea" duration="21"/>
+  </file>
   <file path="C:\Users\israe\Desktop\TCC IGTI\vr-project\components\Spacer\Spacer.spec.js">
-    <testCase name="Spacer component renders a spacer" duration="15"/>
+    <testCase name="Spacer component renders a spacer" duration="17"/>
+  </file>
+  <file path="C:\Users\israe\Desktop\TCC IGTI\vr-project\components\Banner\Banner.spec.js">
+    <testCase name="Banner component renders a banner" duration="24"/>
+  </file>
+  <file path="C:\Users\israe\Desktop\TCC IGTI\vr-project\components\Input\Input.spec.js">
+    <testCase name="Input component renders a input" duration="20"/>
+  </file>
+  <file path="C:\Users\israe\Desktop\TCC IGTI\vr-project\components\Typography\Typography.spec.js">
+    <testCase name="Typography component renders a typography" duration="18"/>
+  </file>
+  <file path="C:\Users\israe\Desktop\TCC IGTI\vr-project\components\Button\Button.spec.js">
+    <testCase name="Button component renders a button" duration="55"/>
   </file>
 </testExecutions>
