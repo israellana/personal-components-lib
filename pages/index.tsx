@@ -10,6 +10,7 @@ export default function Home() {
       </Head>
 
       <main className="flex items-center justify-center h-screen w-screen">
+        Teste
       </main>
     </div>
   )
