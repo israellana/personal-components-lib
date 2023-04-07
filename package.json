@@ -1,4 +1,7 @@
 {
+  "name": "", 
+  "version": "", 
+  "author": "", 
   "private": true,
   "scripts": {
     "dev": "next dev",
