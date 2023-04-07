@@ -27,7 +27,7 @@ const elementTypes: { [key: string]: any } = {
   }
 }
 
-const Typography: React.FC<TypographyProps> = (props) => {
+export const Typography: React.FC<TypographyProps> = (props) => {
 
   const Element = elementTypes[props.type??"text"][props.size??"medium"]
 
@@ -43,5 +43,3 @@ Typography.defaultProps = {
   align: 'left',
   color: 'black'
 };
-
-export default Typography

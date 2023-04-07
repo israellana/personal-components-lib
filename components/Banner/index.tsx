@@ -1,7 +1,7 @@
 import React from 'react'
-import Typography from '../Typography'
-import Button from '../Button'
-import Spacer from '../Spacer'
+import { Typography } from '../Typography'
+import { Button } from '../Button'
+import { Spacer } from '../Spacer'
 // import classes from './styles'
 
 interface BannerProps{
@@ -12,7 +12,7 @@ interface BannerProps{
   color?: string;
 }
 
-const Banner: React.FC<BannerProps> = (props) => {
+export const Banner: React.FC<BannerProps> = (props) => {
   return (
     <div className={`bg-${props.color}-100 p-6 rounded-2xl`}>
         <Typography type="title" size="x-small" weight="normal" color={props.color}>{props.title}</Typography>
@@ -25,5 +25,3 @@ const Banner: React.FC<BannerProps> = (props) => {
     </div>
   )
 }
-
-export default Banner

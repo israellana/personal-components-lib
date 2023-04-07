@@ -1,5 +1,5 @@
 import React from 'react'
-import Typography from '../Typography'
+import { Typography } from '../Typography'
 import classes from './styles'
 
 interface ButtonProps{
@@ -18,7 +18,7 @@ const textTypes: { [key: string]: any } = {
     'small': 'x-small'
 }
 
-const Button: React.FC<ButtonProps> = (props) => {
+export const Button: React.FC<ButtonProps> = (props) => {
 
     const Element = props.variant === 'text' ? 'a' : 'button'
 
@@ -39,5 +39,3 @@ Button.defaultProps = {
     disabled: false,
     color: 'primary'
 };
-
-export default Button

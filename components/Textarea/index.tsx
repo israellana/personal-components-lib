@@ -1,5 +1,5 @@
 import React from 'react'
-import Typography from '../Typography'
+import { Typography } from '../Typography'
 import classes from './styles'
 
 interface TextareaProps{
@@ -9,7 +9,7 @@ interface TextareaProps{
   label?: string;
 }
 
-const Textarea: React.FC<TextareaProps> = (props) => {
+export const Textarea: React.FC<TextareaProps> = (props) => {
   return (
     <div className={classes.container()}>
       <textarea {...props} placeholder=" " className={classes.default(props)} />
@@ -20,5 +20,3 @@ const Textarea: React.FC<TextareaProps> = (props) => {
     </div>
   )
 }
-
-export default Textarea

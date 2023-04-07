@@ -1,5 +1,5 @@
 import React from 'react'
-import Typography from '../Typography'
+import { Typography } from '../Typography'
 import classes from './styles'
 
 interface InputProps{
@@ -9,7 +9,7 @@ interface InputProps{
   label?: string;
 }
 
-const Input: React.FC<InputProps> = (props) => {
+export const Input: React.FC<InputProps> = (props) => {
   return (
     <div className={classes.container()}>
       <input {...props} placeholder=" " className={classes.default(props)} />
@@ -20,5 +20,3 @@ const Input: React.FC<InputProps> = (props) => {
     </div>
   )
 }
-
-export default Input

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Spacer from './index';
+import { Spacer } from './index';
 
 export default {
   title: 'Example/Spacer',
